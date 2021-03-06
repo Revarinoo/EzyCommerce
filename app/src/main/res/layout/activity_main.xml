@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/appbar">
+
+    </include>
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center">
+
+        <Button
+            android:textSize="10dp"
+            android:id="@+id/btn_allcategory"
+            android:text="All"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:textSize="10dp"
+            android:id="@+id/btn_category1"
+            android:text="@string/category1"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:textSize="10dp"
+            android:id="@+id/btn_category2"
+            android:text="@string/category2"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:textSize="10dp"
+            android:id="@+id/btn_category3"
+            android:text="@string/category3"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:textSize="10dp"
+            android:id="@+id/btn_category4"
+            android:text="@string/category4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".fragment.finishOrder.OrderComplete">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:text="Main Menu"
+                android:textAlignment="center"
+                android:background="@drawable/btn_order_more"
+                android:textColor="#2196F3"
+                android:layout_marginStart="218dp"
+                android:layout_marginTop="30dp"
+                android:textSize="15sp"
+                android:textAllCaps="false"></Button>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_marginStart="85dp"
+                android:id="@+id/complete"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/success"></ImageView>
+
+            <TextView
+                android:id="@+id/txtComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/complete"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Your order is complete"
+                android:textColor="#000"
+                android:textSize="10pt"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtComplete"
+                android:layout_marginStart="63dp"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Thank you"
+                android:textColor="#000"
+                android:textSize="10pt"
+                android:textStyle="bold"></TextView>
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_my_order"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:text="Grand Total"
+                    android:textColor="#000"
+                    android:textSize="23sp"></TextView>
+
+                <TextView
+                    android:id="@+id/txtTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:text="$ 400"
+                    android:textColor="#000"
+                    android:textSize="23sp"></TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Details"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="10pt"
+            android:layout_marginStart="10dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            ></TextView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rc_complete">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</ScrollView>
